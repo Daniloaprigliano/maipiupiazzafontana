@@ -205,22 +205,32 @@ footer {
 }
 
 .card-back {
-    background-color: #D9534F;
-    color: white;
-    transform: rotateY(180deg);
+    background-color: #D9534F; /* Colore di sfondo */
+    color: white; /* Testo bianco */
+    transform: rotateY(180deg); /* Retro della card */
     border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra il contenuto */
+    text-align: center; /* Testo centrato */
+    padding: 1rem; /* Spaziatura interna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombreggiatura */
+    height: 100%; /* Altezza coerente */
+    overflow-y: auto; /* Scorrimento per testi lunghi */
+    white-space: normal; /* Permette al testo di andare a capo */
+    word-wrap: break-word; /* Spezza le parole lunghe */
+    word-break: break-word; /* Assicura compatibilità */
 }
 
 .card-back p {
-    margin: 0;
-    padding: 1rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: center;
-    word-break: break-word;
-    overflow-wrap: break-word;
+    margin: 0; /* Rimuovi margini */
+    padding: 0.5rem; /* Spaziatura interna del testo */
+    font-size: 1rem; /* Dimensione del testo */
+    line-height: 1.4; /* Spaziatura tra le righe */
+    max-width: 90%; /* Limita larghezza massima del testo */
+    white-space: normal; /* Permette l'andata a capo */
+    text-align: center; /* Centra il testo */
 }
 .card:hover .card-front {
     transform: rotateY(180deg);
