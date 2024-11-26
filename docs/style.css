@@ -169,8 +169,8 @@ footer {
 .card {
   position: relative;
   width: 220px;
-  height: 300px;
-  perspective: 1000px; /* Aggiunge profondità 3D */
+  height: 350px; /* Aumenta l'altezza per testi più lunghi */
+  perspective: 1000px; /* Profondità 3D */
 }
 
 .card-front, .card-back {
@@ -220,12 +220,14 @@ footer {
   border-radius: 10px;
   padding: 1rem;
   display: flex;
-  flex-direction: column; /* Distribuisce il contenuto in colonna */
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center; /* Centra il testo */
+  justify-content: flex-start; /* Allinea il contenuto dall'alto */
+  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombreggiatura */
-  overflow-y: auto; /* Permette lo scroll per testi lunghi */
+  overflow-y: auto;
+    max-height: 100%; /* Permette al contenitore di usare tutta l'altezza */
+    padding: 1rem; /* Permette lo scroll per testi lunghi */
 }
 
 .card-back p {
@@ -233,7 +235,10 @@ footer {
   line-height: 1.5; /* Migliora la leggibilità */
   margin: 0;
   padding: 0.5rem;
-  font-weight: 500; /* Leggermente più spesso per una migliore visibilità */
+  font-weight: 500;
+  max-width: 90%; /* Limita la larghezza massima del testo */
+  word-wrap: break-word; /* Spezza parole lunghe */
+  text-align: justify; /* Allinea il testo ai bordi */
 }
 
 .card:hover .card-front {
