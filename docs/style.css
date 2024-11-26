@@ -239,3 +239,11 @@ footer {
 .card:hover .card-back {
     transform: rotateY(0);
 }
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #002F4B;
+    font-family: 'Playfair Display', serif;
+}
