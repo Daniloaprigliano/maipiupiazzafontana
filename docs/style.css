@@ -213,33 +213,24 @@ footer {
   color: #555;
 }
 
-.card-back {
-    background-color: #D9534F; /* Colore di sfondo */
-    color: white; /* Testo bianco */
-    transform: rotateY(180deg); /* Retro della card */
-    border-radius: 10px;
-    padding: 1rem; /* Spazio interno */
-    display: flex;
-    flex-direction: column; /* Distribuisce il contenuto in colonna */
-    align-items: center; /* Centra gli elementi orizzontalmente */
-    justify-content: center; /* Centra gli elementi verticalmente */
-    text-align: center; /* Centra il testo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombreggiatura */
-    overflow-y: auto; /* Permette lo scroll per testi lunghi */
-    word-wrap: break-word; /* Spezza le parole lunghe */
-    white-space: normal; /* Permette al testo di andare a capo */
-    height: 100%; /* Usa tutta l'altezza disponibile */
+.card {
+    position: relative;
+    width: 220px; /* Larghezza standard */
+    height: 300px; /* Altezza fissa */
+    perspective: 1000px; /* Effetto 3D */
+    transform-style: preserve-3d; /* Mantiene il 3D */
+    transition: transform 0.6s ease; /* Aggiunge transizione */
 }
 
 .card-back p {
+    margin: 0; /* Rimuovi margini */
+    padding: 0.5rem; /* Spazio interno */
     font-size: 1rem; /* Dimensione del testo */
-    line-height: 1.5; /* Spaziatura tra le righe */
-    margin: 0; /* Nessun margine extra */
-    padding: 0.5rem; /* Aggiungi un po' di spazio interno */
-    max-width: 90%; /* Mantieni il testo entro i bordi */
-    overflow-wrap: break-word; /* Forza la rottura delle parole */
+    line-height: 1.5; /* Migliora la leggibilità */
+    word-break: break-word; /* Forza il testo a spezzarsi se necessario */
     white-space: normal; /* Permette al testo di andare a capo */
-    text-align: justify; /* Giustifica il testo per un aspetto migliore */
+    max-width: 90%; /* Mantieni margini interni */
+    text-align: justify; /* Giustifica il testo */
 }
 
 .card:hover .card-front {
