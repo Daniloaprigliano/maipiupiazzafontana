@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    margin: 0;
+}
+header {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+.button {
+    padding: 10px 20px;
+    background: #d9534f;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
