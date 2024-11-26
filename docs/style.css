@@ -190,9 +190,40 @@ footer {
   color: #002F4B; /* Blu scuro */
 }
 
+.scroll-stack figcaption {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #002F4B;
+  position: relative; /* Necessario per posizionare la bio */
+}
+
 .scroll-stack figcaption span {
   display: block;
   font-size: 0.9rem;
-  color: #555; /* Testo secondario in grigio scuro */
+  color: #555;
   margin-top: 0.5rem;
+}
+
+.scroll-stack figcaption .bio {
+  display: none; /* Nascondi la bio di default */
+  position: absolute;
+  bottom: -80px; /* Posiziona la bio sotto il testo */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba(0, 47, 75, 0.9); /* Sfondo semitrasparente blu scuro */
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+  z-index: 10;
+}
+
+.scroll-stack figcaption:hover .bio {
+  display: block; /* Mostra la bio al passaggio del mouse */
+  opacity: 1;
+  bottom: -100px; /* Muove leggermente la bio per un effetto dinamico */
 }
