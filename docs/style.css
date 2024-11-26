@@ -24,9 +24,11 @@ header {
 }
 
 .logo {
-    max-width: 80px;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: brightness(0.9); /* Riduce la luminosità al 90% */
 }
-
 header h1 {
     font-size: 2rem;
     margin: 0;
