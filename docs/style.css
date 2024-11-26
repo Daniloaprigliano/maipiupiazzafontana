@@ -152,47 +152,47 @@ footer {
 }
 
 .scroll-stack {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  gap: 1rem; /* Riduce la distanza tra le cards */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 1rem;
-  padding-inline: 1rem;
-  padding-block: 30px 60px;
+  padding: 1rem;
   scroll-padding-inline: 1rem;
 }
 
 .scroll-stack .item {
+  flex: 0 0 auto; /* Ogni card ha larghezza fissa */
   scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #FFFFFF; /* Bianco per contrasto */
+  border: 2px solid #D9534F; /* Bordo rosso in linea con la locandina */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leggera ombra per un effetto 3D */
+  width: 220px;
+  text-align: center;
+  padding: 1rem;
 }
 
 .scroll-stack figure {
-  position: relative;
-  width: 200px;
-  height: 300px;
-  background: light-dark(#ccc, #444);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: var(--shadow-5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
 }
 
 .scroll-stack img {
   width: 100%;
-  height: 80%;
-  object-fit: cover;
+  height: 150px;
+  object-fit: cover; /* Adatta l'immagine senza deformarla */
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .scroll-stack figcaption {
-  text-align: center;
   font-size: 1rem;
-  margin-top: 10px;
-  color: #002F4B;
+  font-weight: bold;
+  color: #002F4B; /* Blu scuro */
+}
+
+.scroll-stack figcaption span {
+  display: block;
+  font-size: 0.9rem;
+  color: #555; /* Testo secondario in grigio scuro */
+  margin-top: 0.5rem;
 }
