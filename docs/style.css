@@ -153,11 +153,12 @@ footer {
 
 .scroll-stack {
   display: flex;
-  gap: 1rem; /* Riduce la distanza tra le cards */
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  gap: 1rem; /* Distanza tra le cards */
+  overflow-x: auto; /* Abilita lo scorrimento orizzontale */
+  scroll-snap-type: x mandatory; /* Forza l'ancoraggio delle cards */
   padding: 1rem;
   scroll-padding-inline: 1rem;
+  white-space: nowrap; /* Impedisce che le cards vadano su più righe */
 }
 
 .item {
@@ -233,4 +234,9 @@ h2 {
   margin: 2rem 0; /* Aggiunge spazio sopra e sotto il titolo */
   color: #002F4B; /* Colore del testo in linea con la palette */
   font-weight: bold;
+}
+#carousel {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
 }
