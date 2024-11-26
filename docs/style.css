@@ -71,7 +71,7 @@ body {
 
 .programma-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Box uniformi */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
@@ -145,110 +145,85 @@ footer {
     padding: 1.5rem;
     font-size: 0.9rem;
 }
-@keyframes slide-in {
-  from {
-    transform: translateX(-100cqi) scale(0.75);
-  }
-}
 
+/* Carousel styles */
 .scroll-stack {
-  display: flex;
-  gap: 1rem; /* Distanza tra le cards */
-  overflow-x: auto; /* Abilita lo scorrimento orizzontale */
-  scroll-snap-type: x mandatory; /* Forza l'ancoraggio delle cards */
-  padding: 1rem;
-  scroll-padding-inline: 1rem;
-  white-space: nowrap; /* Impedisce che le cards vadano su più righe */
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 1rem;
+    scroll-padding-inline: 1rem;
+    white-space: nowrap;
 }
 
 .item {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
 }
 
 .card {
-  position: relative;
-  width: 220px; /* Larghezza standard */
-  height: 300px; /* Altezza consistente */
-  perspective: 1000px; /* Effetto 3D */
+    position: relative;
+    width: 220px;
+    height: 300px;
+    perspective: 1000px;
+    transition: transform 0.6s ease-in-out;
 }
 
 .card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden; /* Nasconde il lato posteriore */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-  transition: transform 0.6s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
 
 .card-front {
-  background-color: #FFFFFF;
-  border: 2px solid #D9534F;
+    background-color: #FFFFFF;
+    border: 2px solid #D9534F;
 }
 
 .card-front img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .card-front p {
-  font-size: 1rem;
-  color: #002F4B;
-  font-weight: bold;
-  margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #002F4B;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-align: center;
 }
 
-.card-front span {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-..card {
-    position: relative;
-    width: 220px; /* Larghezza standard */
-    height: 300px; /* Altezza fissa */
-    perspective: 1000px; /* Effetto 3D */
-    transform-style: preserve-3d; /* Mantiene il 3D */
-    transition: transform 0.6s ease; /* Aggiunge transizione */
+.card-back {
+    background-color: #D9534F;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
 }
 
 .card-back p {
-    margin: 0; /* Rimuovi margini */
-    padding: 0.5rem; /* Spazio interno */
-    font-size: 1rem; /* Dimensione del testo */
-    line-height: 1.5; /* Migliora la leggibilità */
-    word-break: break-word; /* Forza il testo a spezzarsi se necessario */
-    white-space: normal; /* Permette al testo di andare a capo */
-    max-width: 90%; /* Mantieni margini interni */
-    text-align: justify; /* Giustifica il testo */
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .card:hover .card-front {
-  transform: rotateY(180deg); /* Ruota il fronte verso il retro */
+    transform: rotateY(180deg);
 }
 
 .card:hover .card-back {
-  transform: rotateY(0); /* Mostra il retro */
-}
-h2 {
-  text-align: center; /* Allinea il testo al centro */
-  font-size: 2rem; /* Dimensione del carattere */
-  margin: 2rem 0; /* Aggiunge spazio sopra e sotto il titolo */
-  color: #002F4B; /* Colore del testo in linea con la palette */
-  font-weight: bold;
-}
-#carousel {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: auto;
+    transform: rotateY(0);
 }
