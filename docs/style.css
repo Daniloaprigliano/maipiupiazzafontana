@@ -150,3 +150,37 @@ footer {
     padding: 1.5rem;
     font-size: 0.9rem;
 }
+/* Locandina Section */
+.locandina-section {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.locandina-container {
+    display: flex;
+    flex-direction: column; /* Posiziona immagine e pulsante in colonna */
+    align-items: center; /* Centra immagine e pulsante */
+    gap: 1rem; /* Spazio uniforme tra immagine e pulsante */
+}
+
+.locandina {
+    max-width: 350px;
+    height: auto;
+    border: 2px solid #D9534F;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.locandina-container .button {
+    background-color: #D9534F;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.locandina-container .button:hover {
+    background-color: #C9302C;
+}
