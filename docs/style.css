@@ -214,16 +214,18 @@ footer {
 }
 
 .card-back {
-  background-color: #D9534F; /* Rosso scuro per maggiore contrasto */
-  color: white; /* Testo bianco ben leggibile */
+  background-color: #D9534F; /* Rosso scuro per contrasto */
+  color: white; /* Testo bianco leggibile */
   transform: rotateY(180deg); /* Retro della card */
   border-radius: 10px;
   padding: 1rem;
   display: flex;
+  flex-direction: column; /* Distribuisce il contenuto in colonna */
   align-items: center;
   justify-content: center;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leggero ombreggiamento */
+  text-align: center; /* Centra il testo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombreggiatura */
+  overflow-y: auto; /* Permette lo scroll per testi lunghi */
 }
 
 .card-back p {
