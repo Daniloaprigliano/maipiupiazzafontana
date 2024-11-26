@@ -230,7 +230,7 @@ footer {
     word-break: break-word; /* Forza il testo a spezzarsi se necessario */
     white-space: normal; /* Permette al testo di andare a capo */
     max-width: 90%; /* Mantieni margini interni */
-    text-align: justify; /* Giustifica il testo */
+    text-align: center;
 }
 
 .card:hover .card-front {
