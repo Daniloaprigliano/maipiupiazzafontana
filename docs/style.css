@@ -223,15 +223,14 @@ footer {
 }
 
 .card-back p {
-  font-size: 1rem; /* Dimensione testo */
-  line-height: 1.4; /* Spaziatura tra le righe */
-  margin: 0;
-  padding: 0.5rem;
-  font-weight: 400; /* Testo normale */
-  max-width: 90%; /* Limita larghezza massima */
-  word-break: break-word; /* Spezza le parole troppo lunghe */
-  overflow-wrap: break-word; /* Compatibilità extra */
-  text-align: center; /* Cambiato a centrato */
+    margin: 0; /* Rimuovi margini */
+    padding: 0.5rem; /* Spazio interno */
+    font-size: 1rem; /* Dimensione del testo */
+    line-height: 1.5; /* Migliora la leggibilità */
+    word-break: break-word; /* Forza il testo a spezzarsi se necessario */
+    white-space: normal; /* Permette al testo di andare a capo */
+    max-width: 90%; /* Mantieni margini interni */
+    text-align: justify; /* Giustifica il testo */
 }
 
 .card:hover .card-front {
