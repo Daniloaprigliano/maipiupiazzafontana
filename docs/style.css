@@ -22,10 +22,9 @@ body {
 }
 
 .logo {
-    max-width: 100px; /* Leggermente più grande */
+    width: 100px;
     height: auto;
-    margin-bottom: 1.5rem; /* Più spazio sotto */
-    filter: brightness(1);
+    margin-bottom: 1rem;
 }
 
 .hero h1 {
@@ -57,60 +56,50 @@ body {
 .locandina {
     max-width: 350px;
     height: auto;
-    margin: 1rem auto;
     border: 2px solid #D9534F;
     border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-.locandina-section .button {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #D9534F;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.locandina-section .button:hover {
-    background-color: #C9302C;
-}
-
 /* Programma Section */
+.programma-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .programma-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Box uniformi */
+    gap: 1.5rem;
 }
 
 .programma-item {
     display: flex;
     align-items: center;
+    flex-direction: column;
     background-color: #FFFFFF;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 2px solid #D9534F;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .programma-icon {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
     border: 2px solid #D9534F;
 }
 
 .ora {
+    font-size: 1.5rem;
     font-weight: bold;
     color: #D9534F;
-    margin-right: 1rem;
-    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .programma-item strong {
@@ -129,7 +118,6 @@ body {
 .cta-section {
     text-align: center;
     padding: 3rem 1rem;
-    background-color: #F4F4F9;
 }
 
 .cta-section .button {
@@ -156,38 +144,4 @@ footer {
     text-align: center;
     padding: 1.5rem;
     font-size: 0.9rem;
-}
-/* Locandina Section */
-.locandina-section {
-    text-align: center;
-    padding: 3rem 1rem;
-}
-
-.locandina-container {
-    display: flex;
-    flex-direction: column; /* Posiziona immagine e pulsante in colonna */
-    align-items: center; /* Centra immagine e pulsante */
-    gap: 1rem; /* Spazio uniforme tra immagine e pulsante */
-}
-
-.locandina {
-    max-width: 350px;
-    height: auto;
-    border: 2px solid #D9534F;
-    border-radius: 10px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-}
-
-.locandina-container .button {
-    background-color: #D9534F;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.locandina-container .button:hover {
-    background-color: #C9302C;
 }
