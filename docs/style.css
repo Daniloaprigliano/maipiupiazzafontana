@@ -227,3 +227,10 @@ footer {
 .card:hover .card-back {
   transform: rotateY(0); /* Mostra il retro */
 }
+h2 {
+  text-align: center; /* Allinea il testo al centro */
+  font-size: 2rem; /* Dimensione del carattere */
+  margin: 2rem 0; /* Aggiunge spazio sopra e sotto il titolo */
+  color: #002F4B; /* Colore del testo in linea con la palette */
+  font-weight: bold;
+}
