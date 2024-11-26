@@ -16,6 +16,11 @@ header {
     padding: 3rem 1rem;
 }
 
+header .hero img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
 header .hero h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -46,6 +51,16 @@ main section h2 {
 main section p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
+}
+
+/* Locandina styles */
+.locandina {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0;
+    border: 2px solid #D9534F;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Buttons */
