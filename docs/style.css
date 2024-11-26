@@ -1,4 +1,4 @@
-/* Importazioni font */
+/* Global styles */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #F4F4F9;
@@ -13,7 +13,7 @@ body {
     background-color: #002F4B;
     color: white;
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
 }
 
 .hero-content {
@@ -22,8 +22,9 @@ body {
 }
 
 .logo {
-    max-width: 120px;
-    margin-bottom: 1rem;
+    max-width: 100px; /* Leggermente più grande */
+    height: auto;
+    margin-bottom: 1.5rem; /* Più spazio sotto */
     filter: brightness(1);
 }
 
@@ -42,7 +43,7 @@ body {
 /* Introduction Section */
 .introduction {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -50,68 +51,102 @@ body {
 /* Locandina Section */
 .locandina-section {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .locandina {
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
-    margin: 1rem 0;
-    border: 3px solid #D9534F;
+    margin: 1rem auto;
+    border: 2px solid #D9534F;
     border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-.button {
+.locandina-section .button {
     display: inline-block;
+    margin-top: 1rem;
     background-color: #D9534F;
     color: white;
-    text-decoration: none;
     padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
     border-radius: 5px;
     font-weight: bold;
+    text-decoration: none;
     transition: background-color 0.3s;
 }
 
-.button:hover {
+.locandina-section .button:hover {
     background-color: #C9302C;
 }
 
 /* Programma Section */
 .programma-section {
     text-align: center;
-    padding: 2rem 1rem;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.programma-section h2 {
+    margin-bottom: 2rem;
 }
 
 .programma-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 2rem; /* Aumentato lo spazio tra i box */
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .programma-item {
     background-color: #FFFFFF;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 2px solid #D9534F;
     border-radius: 5px;
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.programma-item strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.programma-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
 }
 
 /* CTA Section */
 .cta-section {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     background-color: #F4F4F9;
 }
 
+.cta-section .button {
+    display: inline-block;
+    margin: 1rem;
+    background-color: #D9534F;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-section .button:hover {
+    background-color: #C9302C;
+}
+
+/* Footer */
 footer {
     background-color: #002F4B;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 0.9rem;
 }
