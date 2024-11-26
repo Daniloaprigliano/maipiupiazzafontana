@@ -12,57 +12,83 @@ body {
 header {
     background-color: #002F4B;
     color: white;
+    text-align: center;
     padding: 2rem 1rem;
 }
 
 .header-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 80px;
 }
 
-.header-text h1 {
-    font-size: 2.5rem;
+header h1 {
+    font-size: 2rem;
     margin: 0;
 }
 
-.header-text p {
+header p {
     font-size: 1.2rem;
     margin: 0.5rem 0 0;
 }
 
-/* Section styles */
-.welcome-section, .locandina-section, .programma-section {
+/* Welcome section */
+.welcome-section {
     text-align: center;
-    margin: 2rem auto;
+    padding: 2rem 1rem;
     max-width: 800px;
+    margin: 0 auto;
+}
+
+.locandina-preview {
+    text-align: center;
+    margin: 2rem 0;
 }
 
 .locandina {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
-    margin: 2rem 0;
+    margin: 1rem auto;
     border: 2px solid #D9534F;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.programma-content {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
+.download-link {
+    color: #D9534F;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.colonna {
-    width: 45%;
+.download-link:hover {
+    text-decoration: underline;
 }
 
-/* Buttons styles */
+/* Programma section */
+.programma-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.programma-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.programma-list li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Buttons section */
 .buttons-section {
     text-align: center;
     margin: 2rem 0;
